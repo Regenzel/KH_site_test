@@ -1,1 +1,17 @@
 {% extends "base.html" %}
+
+{% block pageBase %}
+
+<body>
+   <details>
+    <summary>
+        <img id="kh_posters" src="{{ url_for('static', filename='img/kh1_foto.webp') }}" alt="KH1 poster" loading="lazy">
+        <div>
+            <span>Kingdom Hearts</span>
+        </div>
+    </summary>
+    
+   </details>
+</body>
+
+{% endblock %}
