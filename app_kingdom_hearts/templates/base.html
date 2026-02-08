@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Hearts Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    <h1 id="title_img"><img id="kh_img" src="{{ url_for('static', filename='img/khinfologo.png') }}" alt="Kingdom Hearts Info Logo" loading="lazy"></h1>
+</head>
+<body>
+    <header>
+        <nav id="menu_nav">
+            <a href="/"><button class ="button_menu">Home</button></a>
+            <a href="/all_games"><button class ="button_menu">All games</button></a>
+            <a href="/saga_info"><button class ="button_menu">Saga info</button></a>
+            <a href="/whats_next"><button class ="button_menu">What's next on Kingdom Hearts</button></a>
+        </nav>
+    </header>
+    <section>
+        {% block pageBase %}
+
+        {% endblock %}
+    </section>
+    <footer id="footer">
+        © 2026 Sitio fan sin fines de lucro. Kingdom Hearts © Disney. Desarrollado por Square Enix.
+    </footer>
+</body>
+
+</html>

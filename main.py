@@ -1,0 +1,1 @@
+from app_kingdom_hearts import app
