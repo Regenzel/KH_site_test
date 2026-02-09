@@ -3,15 +3,50 @@
 {% block pageBase %}
 
 <body>
-   <details>
-    <summary>
-        <img id="kh_posters" src="{{ url_for('static', filename='img/kh1_foto.webp') }}" alt="KH1 poster" loading="lazy">
-        <div>
-            <span>Kingdom Hearts</span>
-        </div>
-    </summary>
-    
-   </details>
+   <div class="kh_games">
+    <details class="game-card">
+        <summary>
+        <img src="/static/img/kh1_foto.webp" alt="Poster 1" class="kh_posters">
+        </summary>
+        <div class="game-name">Kingdom Hearts 1</div>
+    </details>
+
+    <details class="game-card">
+        <summary>
+        <img src="/static/img/kh_2.jpg" alt="Poster 2" class="kh_posters">
+        </summary>
+        <div class="game-name">Kingdom Hearts 2</div>
+    </details>
+
+    <details class="game-card">
+        <summary>
+        <img src="/static/img/kh_3.jpg" alt="Poster 2" class="kh_posters">
+        </summary>
+        <div class="game-name">Kingdom Hearts 3</div>
+    </details>
+
+    <details class="game-card">
+        <summary>
+        <img src="/static/img/kh_bbs.png" alt="Poster 2" class="kh_posters">
+        </summary>
+        <div class="game-name">Kingdom Hearts: Birth by Sleep</div>
+    </details>
+
+    <details class="game-card">
+        <summary>
+        <img src="/static/img/kh_bbs_aqua.jpg" alt="Poster 2" class="kh_posters">
+        </summary>
+        <div class="game-name">Kingdom Hearts: Birth by Sleep, A fragmentary passage </div>
+    </details>
+
+    <details class="game-card">
+        <summary>
+        <img src="/static/img/kh_ddd.jpg" alt="Poster 2" class="kh_posters">
+        </summary>
+        <div class="game-name">Kingdom Hearts: Dream Drop Distance </div>
+    </details>
+</div>
+<p id="disclaimer"><strong> *Disclaimer:</strong> All games are not here, but there is the most important ones of the saga</p>
 </body>
 
 {% endblock %}
